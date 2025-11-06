@@ -11,4 +11,20 @@ public:
         }
         return {};
     }
-};
+};  #Two_Sum
+
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        int temp=x;
+        long long res=0;
+        while(temp){
+            int rem=temp%10;
+            res=res*10+rem;
+            temp/=10;
+        }
+        if (x==0) return true;
+        else if (x==res && x>0) return true;
+        else return false;
+    }
+};  #Palindromme_number
